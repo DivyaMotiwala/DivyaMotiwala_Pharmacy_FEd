@@ -1,6 +1,5 @@
 .heading-styler {
     height: 15vh;
-    width: 100vw;
     background-color: darkslategray;
     color: white;
 }
@@ -34,7 +33,7 @@ nav {
     white-space: nowrap;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    list-style-type: none; 
+    list-style-type: none;
 }
 
 /* Links inside the dropdown */
@@ -43,7 +42,7 @@ nav {
     padding: 4% 2%;
     text-decoration: none;
     font-size: small;
-    
+
 }
 
 .dropdown {
@@ -59,6 +58,64 @@ nav {
 
 .navbar-button-styler:hover {
     background-color: black;
+}
+
+.slider-container {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    border: 2px solid steelblue;
+    max-height: 90%;
+}
+
+.slider-content {
+    animation: slide 15s infinite;
+    min-width: 100%;
+    object-fit: contain;
+}
+
+/*Animation activated by keyframes*/
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    40% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-200%);
+    }
+
+    60% {
+        transform: translateX(-200%);
+    }
+
+    65% {
+        transform: translateX(-300%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    85% {
+        transform: translateX(-400%);
+    }
+
+    100% {
+        transform: translateX(-400%);
+    }
 }
 
 main {
