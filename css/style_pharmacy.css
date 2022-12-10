@@ -1,0 +1,67 @@
+.heading-styler {
+    height: 15vh;
+    width: 100vw;
+    background-color: darkslategray;
+    color: white;
+}
+
+.heading-font-styler {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.navbar-button-styler {
+    background-color: rgb(135, 131, 131);
+    color: white;
+    border: none;
+    padding: 1%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+nav {
+    height: 100%;
+    background-color: rgb(135, 131, 131);
+    display: flex;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F1F1F1;
+    top: 100%;
+    left: 20%;
+    white-space: nowrap;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style-type: none; 
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(119, 119, 229);
+    padding: 4% 2%;
+    text-decoration: none;
+    font-size: small;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-flex;
+    padding: 0 2%;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar-button-styler:hover {
+    background-color: black;
+}
+
+main {
+    /* Subtracting header, nav bar and footer height to get main height */
+    height: calc(100vh - 15vh - 7vh - 8vh);
+}
