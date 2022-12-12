@@ -53,3 +53,9 @@ footer {
     height: 8vh;
 
 }
+.text-bold{
+    font-weight: bold;
+}
+.text-small{
+    font-size: small;
+}

@@ -3,7 +3,11 @@
     background-color: darkslategray;
     color: white;
 }
-
+header{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
 .heading-font-styler {
     font-weight: bold;
     font-size: xx-large;
@@ -66,7 +70,7 @@ nav {
     display: flex;
     overflow: hidden;
     border: 2px solid steelblue;
-    max-height: 90%;
+    max-height: 70vh;
 }
 
 .slider-content {
@@ -118,7 +122,57 @@ nav {
     }
 }
 
-main {
-    /* Subtracting header, nav bar and footer height to get main height */
-    height: calc(100vh - 15vh - 7vh - 8vh);
+.products-parent-container{
+    display: block;
 }
+
+.products-container{
+    display: flex;
+    /* justify-content: stretch; */
+}
+.products-card{
+    display: block;
+    background-color: rgb(227, 242, 251);
+    box-shadow: 0 5px 8px gray, 0 16px 8px lightgray;
+    width: 15vw;
+    height: 10em;
+    border-radius: 2%;
+    margin: 0 3% 3% 3%;
+    padding: 1%;
+    /* align-self: stretch; */
+}
+.product-header-styler{
+    font-weight: bold;
+    font-size: large;
+    margin: 2% ;
+}
+.products-card img{
+    object-fit: contain;
+    width: 100%;
+    height: 55%;
+}
+.products-card button:active{
+    background-color: rgb(250, 234, 230);
+    border: rgb(0,255,76) 2px solid;
+}
+.products-card button:hover{
+    background-color: rgb(154, 184, 240);
+    
+}
+.price-styler{
+    color: rgb(90, 141, 235);
+    font-size: x-small;
+}
+.add-to-cart-styler{
+  
+    border: blue 2px solid;
+    border-radius: 4%;
+    color: chocolate;
+    background-color: rgb(188, 208, 245);
+    width: 100%;
+    margin: 2% 0;
+    padding: 2% 0;
+}
+
+/* Resizing - buttons are misaligned check it *
+drop down padding to give/
